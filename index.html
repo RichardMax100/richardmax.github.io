@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Max — Software Engineer</title>
+  <!-- Google Fonts: Syne for display, DM Sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <!-- Phosphor Icons (lightweight icon set) -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ===================== CURSOR (custom dot) ===================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / brand -->
+      <a href="#hero" class="nav-logo">RM<span class="dot">.</span></a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA button -->
+      <a href="mailto:richardlock342@gmail.com" class="btn btn-nav">Hire Me</a>
+
+      <!-- Mobile hamburger toggle -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== MOBILE DRAWER ===================== -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul>
+      <li><a href="#about"    class="drawer-link">About</a></li>
+      <li><a href="#projects" class="drawer-link">Projects</a></li>
+      <li><a href="#skills"   class="drawer-link">Skills</a></li>
+      <li><a href="#contact"  class="drawer-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero">
+    <!-- Decorative grid background -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Status badge -->
+      <div class="badge reveal">
+        <span class="badge-dot"></span> Available for freelance projects
+      </div>
+
+      <!-- Main heading -->
+      <h1 class="hero-name reveal">
+        Richard<br /><span class="accent">Max</span>
+      </h1>
+
+      <!-- Tagline -->
+      <p class="hero-tagline reveal">
+        Software Engineering Student <span class="divider">|</span> Web Developer
+      </p>
+
+      <!-- Description -->
+      <p class="hero-desc reveal">
+        I craft clean, performant web experiences with modern tools. <br class="br-hide"/>
+        Based in Nigeria — building for the world.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <!-- Floating code snippet decorations -->
+    <div class="code-deco code-deco--1" aria-hidden="true">
+      <pre><code>&lt;div class="world"&gt;
+  Hello 🌍
+&lt;/div&gt;</code></pre>
+    </div>
+    <div class="code-deco code-deco--2" aria-hidden="true">
+      <pre><code>const build = () =&gt; {
+  return future;
+};</code></pre>
+    </div>
+
+    <!-- Scroll hint -->
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <!-- Section label -->
+      <p class="section-label reveal">01 — About Me</p>
+
+      <div class="about-grid">
+        <!-- Text content -->
+        <div class="about-text">
+          <h2 class="section-title reveal">Passionate about <span class="accent">building</span> things for the web.</h2>
+          <p class="reveal">
+            Hi, I'm Richard — a first-year Software Engineering student with a deep
+            curiosity for how the web works and an obsession with writing clean, efficient code.
+            I started coding at 16 and haven't stopped since.
+          </p>
+          <p class="reveal">
+            I specialize in front-end development, turning ideas into polished digital
+            products. Whether it's a business landing page or a full-stack web app,
+            I approach every project with attention to detail and a focus on user experience.
+          </p>
+          <p class="reveal">
+            When I'm not coding, I'm exploring open-source projects, contributing to
+            my university's tech community, or watching tutorials to level up my craft.
+          </p>
+
+          <!-- Quick facts -->
+          <div class="about-facts reveal">
+            <div class="fact">
+              <span class="fact-num">1+</span>
+              <span class="fact-label">Year of coding</span>
+            </div>
+            <div class="fact">
+              <span class="fact-num">5+</span>
+              <span class="fact-label">Projects shipped</span>
+            </div>
+            <div class="fact">
+              <span class="fact-num">100%</span>
+              <span class="fact-label">Dedication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avatar / illustration card -->
+        <div class="about-visual reveal">
+          <div class="avatar-card">
+            <div class="avatar-initials">RM</div>
+            <div class="avatar-info">
+              <strong>Richard Max</strong>
+              <span>Nigeria 🇳🇬</span>
+            </div>
+            <div class="avatar-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">React</span>
+            </div>
+            <div class="avatar-status">
+              <i class="ph ph-graduation-cap"></i> 100 Level · Software Engineering
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <p class="section-label reveal">02 — Projects</p>
+      <h2 class="section-title reveal">Things I've <span class="accent">built</span></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon"><i class="ph ph-shopping-cart"></i></div>
+            <div class="card-links">
+              <a href="#" class="icon-link" aria-label="GitHub" title="View on GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live Demo" title="Live Demo">
+                <i class="ph ph-arrow-square-out"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">ShopEase — E-commerce UI</h3>
+          <p class="card-desc">
+            A responsive e-commerce storefront built with HTML, CSS and vanilla JavaScript.
+            Features product filtering, a dynamic cart, and a mobile-first layout. Designed
+            with real UX principles in mind.
+          </p>
+          <div class="card-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon"><i class="ph ph-cloud-sun"></i></div>
+            <div class="card-links">
+              <a href="#" class="icon-link" aria-label="GitHub" title="View on GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live Demo" title="Live Demo">
+                <i class="ph ph-arrow-square-out"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">WeatherNow — Weather App</h3>
+          <p class="card-desc">
+            A real-time weather application powered by the OpenWeatherMap API.
+            Users can search any city and get current conditions, humidity,
+            wind speed and a 5-day forecast — all in a clean, animated interface.
+          </p>
+          <div class="card-stack">
+            <span>JavaScript</span><span>REST API</span><span>CSS3</span>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon"><i class="ph ph-notepad"></i></div>
+            <div class="card-links">
+              <a href="#" class="icon-link" aria-label="GitHub" title="View on GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live Demo" title="Live Demo">
+                <i class="ph ph-arrow-square-out"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">TaskFlow — To-Do App</h3>
+          <p class="card-desc">
+            A lightweight task management app with local storage persistence, drag-and-drop
+            reordering, priority labels, and dark/light theme toggle. Built to solve a real
+            problem during exam season.
+          </p>
+          <div class="card-stack">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>LocalStorage</span>
+          </div>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon"><i class="ph ph-chats"></i></div>
+            <div class="card-links">
+              <a href="#" class="icon-link" aria-label="GitHub" title="View on GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live Demo" title="Live Demo">
+                <i class="ph ph-arrow-square-out"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">QuizMate — Quiz Platform</h3>
+          <p class="card-desc">
+            An interactive quiz app with timed questions, score tracking and a leaderboard.
+            Built as a study tool for classmates, it features multiple categories and
+            randomized question sets powered by the Open Trivia DB API.
+          </p>
+          <div class="card-stack">
+            <span>JavaScript</span><span>API</span><span>CSS Grid</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <p class="section-label reveal">03 — Skills</p>
+      <h2 class="section-title reveal">My <span class="accent">toolkit</span></h2>
+
+      <div class="skills-grid">
+        <!-- Skill group -->
+        <div class="skill-group reveal">
+          <h4 class="skill-group-title"><i class="ph ph-code"></i> Frontend</h4>
+          <ul>
+            <li class="skill-item"><span>HTML5</span><div class="bar"><div class="bar-fill" style="--pct:90%"></div></div></li>
+            <li class="skill-item"><span>CSS3 / Flexbox / Grid</span><div class="bar"><div class="bar-fill" style="--pct:85%"></div></div></li>
+            <li class="skill-item"><span>JavaScript (ES6+)</span><div class="bar"><div class="bar-fill" style="--pct:75%"></div></div></li>
+            <li class="skill-item"><span>React (learning)</span><div class="bar"><div class="bar-fill" style="--pct:50%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <h4 class="skill-group-title"><i class="ph ph-terminal-window"></i> Backend & Tools</h4>
+          <ul>
+            <li class="skill-item"><span>Python</span><div class="bar"><div class="bar-fill" style="--pct:70%"></div></div></li>
+            <li class="skill-item"><span>Git & GitHub</span><div class="bar"><div class="bar-fill" style="--pct:80%"></div></div></li>
+            <li class="skill-item"><span>REST APIs</span><div class="bar"><div class="bar-fill" style="--pct:72%"></div></div></li>
+            <li class="skill-item"><span>VS Code</span><div class="bar"><div class="bar-fill" style="--pct:95%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal">
+          <h4 class="skill-group-title"><i class="ph ph-compass"></i> Soft Skills</h4>
+          <ul>
+            <li class="skill-item"><span>Problem Solving</span><div class="bar"><div class="bar-fill" style="--pct:88%"></div></div></li>
+            <li class="skill-item"><span>Communication</span><div class="bar"><div class="bar-fill" style="--pct:82%"></div></div></li>
+            <li class="skill-item"><span>Teamwork</span><div class="bar"><div class="bar-fill" style="--pct:85%"></div></div></li>
+            <li class="skill-item"><span>Self-learning</span><div class="bar"><div class="bar-fill" style="--pct:95%"></div></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <p class="section-label reveal">04 — Contact</p>
+      <h2 class="section-title reveal">Let's <span class="accent">work</span> together</h2>
+
+      <p class="contact-sub reveal">
+        Have a project in mind, a question, or just want to say hi?
+        My inbox is always open. I'll get back to you within 24 hours.
+      </p>
+
+      <!-- Contact cards -->
+      <div class="contact-cards reveal">
+        <a href="mailto:richardlock342@gmail.com" class="contact-card">
+          <i class="ph ph-envelope-simple"></i>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">richardlock342@gmail.com</span>
+          </div>
+          <i class="ph ph-arrow-right contact-arrow"></i>
+        </a>
+
+        <a href="tel:+2349166850355" class="contact-card">
+          <i class="ph ph-phone"></i>
+          <div>
+            <span class="contact-label">Phone / WhatsApp</span>
+            <span class="contact-value">+234 916 685 0355</span>
+          </div>
+          <i class="ph ph-arrow-right contact-arrow"></i>
+</a>
+        </a>
+
+        <a href="#" class="contact-card">
+          <i class="ph ph-github-logo"></i>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/richardmax</span>
+          </div>
+          <i class="ph ph-arrow-right contact-arrow"></i>
+           <a href="https://wa.me/2349166850355?text=Hello%20Richard%2C%20I%20want%20a%20website"
+   target="_blank"
+   class="wa-btn">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  Chat on WhatsApp
+        </a>
+      </div>
+
+      <!--
+        CONTACT FORM — powered by Formspree
+        Endpoint: https://formspree.io/f/xvzlqbzb
+        ✔ Works on GitHub Pages (no server needed)
+        ✔ Sends every submission to richardlock342@gmail.com
+        ✔ Stays on the same page after submit (JavaScript fetch)
+      -->
+      <form class="contact-form reveal" id="contactForm" novalidate>
+
+        <div class="form-row">
+          <!-- Name field -->
+          <div class="form-group">
+            <label for="senderName">Your Name</label>
+            <input
+              type="text"
+              id="senderName"
+              name="name"
+              placeholder="John Doe"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <!-- Email field -->
+          <div class="form-group">
+            <label for="senderEmail">Your Email</label>
+            <input
+              type="email"
+              id="senderEmail"
+              name="email"
+              placeholder="john@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Message field -->
+        <div class="form-group">
+          <label for="senderMessage">Message</label>
+          <textarea
+            id="senderMessage"
+            name="message"
+            rows="5"
+            placeholder="Tell me about your project…"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Submit button — spans full width -->
+        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+          <span id="btnLabel">Send Message</span>
+          <i class="ph ph-paper-plane-tilt" id="btnIcon"></i>
+        </button>
+
+        <!--
+          Success / error feedback banner.
+          Shown by JavaScript after the Formspree response.
+          CSS classes .form-feedback--success and .form-feedback--error
+          control colour and visibility.
+        -->
+        <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Richard Max<span class="dot">.</span></p>
+      <p class="footer-copy">
+        Designed & built by Richard Max · Nigeria 🇳🇬 · 
+        <span id="footerYear"></span>
+      </p>
+      <div class="footer-links">
+        <a href="mailto:richardlock342@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+        <a href="tel:+2349166850355"             aria-label="Phone"><i class="ph ph-phone"></i></a>
+        <a href="#"                              aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>
